@@ -1,0 +1,24 @@
+# Create your own store. Your store should sell one type of things, like clothing or bikes, whatever you want your store to specialize in. 
+You should have a table for all the items in your store, and at least 5 columns for the kind of data you think you'd need to store. 
+You should sell at least 15 items, and use select statements to order your items by price and show at least one statistic about the items. #
+
+CREATE TABLE Surf_Shop_Inventory (id INTEGER PRIMARY KEY, Brand TEXT, Name INTEGER, Material TEXT, Serial_Number INTEGER, Quantity INTEGER, Price Integer, Reorder_Time_Months INTEGER);
+INSERT into Surf_Shop_Inventory VALUES (1, "Noah's Custom Surf Boards", "Short Board", "Fiberglass", 2525, 10, 1199.00, 6);
+INSERT into Surf_Shop_Inventory VALUES (2, "Noah's Custom Surf Boards", "Long Board", "Wood", 2526, 3, 1399.00, 8);
+INSERT into Surf_Shop_Inventory VALUES (3, "Jim's Handmade Beach Chairs", "Beach Chair","Aluminum", 2527, 25, 99.99, 3);
+INSERT into Surf_Shop_Inventory VALUES (4, "Jim's Handmade Beach Chairs", "Beach Chair", "Wood", 2528, 15, 55.99, 7);
+INSERT into Surf_Shop_Inventory VALUES (5, "Noah's Beach Towels", "Towels", "Microfiber", 2529, 50, 25.99, 3);
+INSERT into Surf_Shop_Inventory VALUES (6, "Seaside Sunblock", "SPF30", "Sunscreen", 2530, 100, 7.99, 2);
+INSERT into Surf_Shop_Inventory VALUES (7, "Seaside Sunblock", "SPF50", "Sunscreen", 2531, 100, 7.99, 2);
+INSERT into Surf_Shop_Inventory VALUES (8, "Seaside Sunblock", "SPF15", "Sunscreen", 2532, 98, 7.99, 2);
+INSERT into Surf_Shop_Inventory VALUES (9, "Beachy Cruiser", "Green Cruiser", "Aluminum", 2533, 12, 7.99, 9);
+INSERT into Surf_Shop_Inventory VALUES (10, "Beachy Cruiser", "Blue Cruiser", "Aluminum", 2534, 10, 250.00, 9);
+INSERT into Surf_Shop_Inventory VALUES (11, "Beachy Cruiser", "Red Cruiser", "Aluminum", 2535, 8, 250.00, 9);
+INSERT into Surf_Shop_Inventory VALUES (12, "Sunny Surf Board Wax", "Cold Water Wax", "Wax", 2536, 50, 2.99, 3);
+INSERT into Surf_Shop_Inventory VALUES (13, "Sunny Surf Board Wax", "Warm Water Wax", "Wax", 2537, 47, 2.99, 3);
+INSERT into Surf_Shop_Inventory VALUES (14, "Sunny Surf Board Wax", "Cool Water Wax", "Wax", 2538, 43, 2.99, 3);
+INSERT into Surf_Shop_Inventory VALUES (15, "Yeti", "50 Gallon Cooler", "Plastic", 2539, 60, 79.99, 5);
+INSERT into Surf_Shop_Inventory VALUES (16, "Fun Wave Boards", "Bodyboard", "Foam", 2540, 30, 99.99, 4);
+
+Select * FROM Surf_Shop_Inventory order by Price;
+Select * FROM Surf_Shop_Inventory WHERE Price > 100
